@@ -4,17 +4,17 @@ import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import About2 from './components/About2';
 
 const App = () => {
   return (
     <Router>
       <div>
         <NavigationBar />
-        <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Routes>
+        <Home />
+        <About />
+        <About2 />
+        <Contact />
       </div>
     </Router>
   );
